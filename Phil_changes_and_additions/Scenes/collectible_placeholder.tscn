@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://didi2doeq5olm"]
+
+[ext_resource type="Texture2D" uid="uid://djlmq5rbgn6ot" path="res://Free/Main Characters/Pink Man/Fall (32x32).png" id="2_ntokm"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pa1kt"]
+radius = 27.0
+height = 78.0
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(3, 3)
+texture = ExtResource("2_ntokm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 5)
+shape = SubResource("CapsuleShape2D_pa1kt")
